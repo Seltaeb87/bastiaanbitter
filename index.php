@@ -1,5 +1,10 @@
-<!doctype=html>
-<html lang ="en">
+<?php 
+	include('login/config.php');
+
+?>
+
+<!DOCTYPE html>
+<html lang = "en">
 <head>
 	<meta charset="utf8" />
 	<link rel="stylesheet" typ="text/css" href="/css/style.css">
@@ -38,9 +43,12 @@
 
 		<div id="about">
 			<h2>
-				"Welcome to the new website of Bastiaan Bitter. 
-				This is a website where I post some stuff what I think is interesting and where I ask questions.<br />
-				At the top you can see a slideshow, it shows the latest news. The three pics below this text links you to HTML, CSS or PHP info. Go check it out!"
+				<?php $text = mysqli_query($conn, 'SELECT postID, postCont FROM blog_posts LIMIT 1'); 
+					if($text->num_rows === 1){
+						$result = mysqli_fetch_assoc($text);
+						echo $result['postCont'];
+	}
+				?>
 			<h2>
 		<div>
 

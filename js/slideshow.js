@@ -7,12 +7,12 @@
 	var showCurrent = function(){
 	  var itemToShow = Math.abs(counter%numItems);// uses remainder (aka modulo) operator to get the actual index of the element to show  
 	  
-	  // remove .show from whichever element currently has it 
+	  // If you go to next or previous, remove this image
 	  [].forEach.call( $items, function(el){
 	    el.classList.remove('show');
 	  });
 	  
-	  // add .show to the one item that's supposed to have it
+	  // SHow the image
 	  $items[itemToShow].classList.add('show');    
 	};
 
@@ -27,7 +27,7 @@
 	     showCurrent();
 	  }, false);
 
-	//set interval(now 5000ms = 5sec)
+	//set interval of slideshow(now 5000ms = 5sec)
 	window.setInterval(function(){
 	counter++;
 	showCurrent();
