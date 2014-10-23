@@ -1,7 +1,6 @@
 	(function(){  
 	var counter = 0, // to keep track of current slide
-	    $items = document.querySelectorAll('.slideshow figure'), // a collection of all of the slides, caching for performance
-	    numItems = $items.length; // total number of slides
+	    $items = document.querySelectorAll('.slideshow figure'), // a collection of all of the slides
 
 	// this function is what cycles the slides, showing the next or previous slide and hiding all the others
 	var showCurrent = function(){

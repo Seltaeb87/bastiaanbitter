@@ -10,7 +10,7 @@
 	<link rel="stylesheet" typ="text/css" href="/css/style.css">
 	<link rel="stylesheet" typ="text/css" href="/css/Hover-master/css/hover.css">
 </head>
-	<title>Bastiaan Bitter</title>
+	<title>Bastiaan Bitterererer</title>
 <body>
 	<div id="container">
 		<header id="top_header">
@@ -43,7 +43,9 @@
 
 		<div id="about">
 			<h2>
-				<?php $text = mysqli_query($conn, 'SELECT postID, postCont FROM blog_posts LIMIT 1'); 
+				<?php 
+				//Get content from database and show it on homepage
+				$text = mysqli_query($conn, 'SELECT postID, postCont FROM blog_posts LIMIT 1'); 
 					if($text->num_rows === 1){
 						$result = mysqli_fetch_assoc($text);
 						echo $result['postCont'];
@@ -64,7 +66,7 @@
 			</div>
 		</div>
 
-				<div id="tripple_section">
+		<div id="tripple_section">
 			<div data-content="html" class="html float">
 				<img src="includes/images/Hood.jpg" alt="html"/>
 			</div>
@@ -75,7 +77,8 @@
 				<img src="includes/images/Hood.jpg" alt="php" />
 			</div>
 		</div>
-				<div id="spacer"></div>
+
+	<div id="spacer"></div>
 		<footer id="footer_section">
 			<div id="footer_nav">
 				<ul>

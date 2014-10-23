@@ -68,6 +68,7 @@ A:hover{
 	text-decoration: underline;
 }
 
+/* Slideshow*/
 .slideshow{
   border: 1px solid #DBDAD8;
   margin:0 auto;
@@ -138,12 +139,14 @@ p{
   color: #fff;
 }
 
+/*MAIN Section incl tiles, slideshow and footer*/
 #main_section{
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-box-flex: 1;
 }
 
+/* TILE Section */
 #tripple_section{
   margin: 20px;
   display: -webkit-box;
@@ -188,6 +191,7 @@ p{
   -webkit-box-flex: 1;
 }
 
+/* FOOTER */
 #footer_section{
   list-style: none;
   display: inline-block;
